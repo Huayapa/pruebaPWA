@@ -1,0 +1,69 @@
+header {
+    position: fixed !important;
+}
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://w0.peakpx.com/wallpaper/775/924/HD-wallpaper-re-branding-burger-king-logo.jpg);
+    background-size: 100% 100vh;
+    background-position: center;
+    background-attachment: fixed ;
+    margin: 0;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 450px;
+    background: #f5ebdcb4;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+h2{
+    color: #502314;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    color: #502314;
+}
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+#boton{
+    background: #502314;
+    color: #fff;
+    padding: 20px;
+    transition: all 0.8s ease;
+    &:hover {
+        background-color: #f5ebdc;
+        color: #502314;
+    }
+
+}
+#boton#hover{
+    cursor: pointer;
+}
+@media(max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+footer {
+    margin: 0 !important;
+}

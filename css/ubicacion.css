@@ -1,0 +1,60 @@
+.main {
+    background: #F5EBDC;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.localidades {
+    padding: 1rem;
+    margin: 0px auto;
+    max-width: 75rem;
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.localidades__title {
+    color: #502314;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: "+";
+    font-size: 1.2em;
+    padding-right: 10px;
+}
+
+summary {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: 1px solid #8B4513;
+    background-color: #FAF0E6;
+    font-weight: bold;
+}
+
+details .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms ease-out,;
+}
+
+details[open] .content {
+    max-height: 500px;
+    transition: max-height 500ms ease-in;
+}
+
+details ul {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #FAF0E6;
+    border-radius: 6px;
+    border: 1px solid #8B4513;
+}

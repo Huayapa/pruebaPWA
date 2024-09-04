@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav{
+    display: flex;
+    background-color: #f5ebdc;
+    align-items: center;
+}
+.nav img{
+    width: 4rem;
+}
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-1{
+    width: 60%;
+    padding: 1rem;
+}
+.nav-2{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav {
+    position: sticky; 
+    top: 0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10; 
+}
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.card img{
+    height: 35vh;
+    object-fit: medium;
+}
+.cards .card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 10px 14px 15px rgba(0, 0, 0, 0.1);
+
+}
+.card a{
+    width: 90%;
+    border-radius: 20px;
+    background-color: #f5ebdc;
+    border: none;
+    color: #A62318;
+    font-weight: bold;
+}
+.card h5{
+    font-weight: bold;
+}
+
+
+
+.menu{
+    padding: 2rem;
+}
+.menu h2{
+    font-weight: bold;
+    color: #A62318;
+}
+
+
+.banner .avice{
+    width: 50%;
+}
+
+.avice img{
+    width: 100%;
+}
+.banner{
+    display: flex;
+    gap: 1rem;
+    padding: 4rem;
+}
+

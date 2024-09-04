@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nosotros{ 
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    
+}
+.nosotros_contenido h2{
+    font-weight: 700;
+    font-size: 30px;
+    color: #F09206;
+    margin-bottom: 10px;
+}
+.cantidad{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.card{
+   background-color: white;
+   margin-top: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   padding: 1rem;
+   border: none;
+}
+.card{
+    color: rgb(87, 87, 87);
+}
+.card h4{
+    font-size: 15px;
+    font-weight: 700;
+}
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+.container_promociones{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.titulo h2{
+    color: #F09206;
+    font-weight: 700;
+    text-align: center;
+}
+.cards img{
+    width: 160px;
+}
+.cards h3{
+    font-size: 15px;
+    font-weight: 700;
+}
+.cards{
+    background-color: transparent;
+    flex-direction: column;
+    border: 1px solid #725f44;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header img {
+        width: 100%; 
+    }
+    .nosotros {
+        padding: 0 10px; 
+        flex-direction: column;
+        align-items: center; 
+    }
+    .nosotros_contenido {
+        margin-bottom: 20px; 
+        text-align: center; 
+    }
+    .nosotros_contenido h2 {
+        font-size: 20px;
+    }
+
+    .cantidad {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px; 
+    }
+    .card {
+        background-color: white;
+        margin-top: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 1rem;
+        max-width: 300px; 
+        width: 100%; 
+        text-align: center; 
+    }
+
+@media (max-width: 576px) {
+    .nosotros_contenido h2 {
+        font-size: 18px; 
+    }
+
+    .card {
+        padding: 0.5rem; 
+    }
+}
+}
