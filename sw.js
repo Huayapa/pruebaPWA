@@ -58,3 +58,21 @@ self.addEventListener("fetch", (e) => {
     caches.match(e.request).then( res => res || fetch(e.request))
   )
 })
+/*
+PRUEBA DE LAS NOTIFIACIONES POR EL WORKER
+*/
+
+self.addEventListener('push', function(e) {
+  const titulo = "Burguer king fake";
+  console.log(e.data?.text());
+  
+  const options = {
+    body: e.data?.text(),
+    icon: 'images/icons/icon-72x72.png',
+    badge: 'images/icons/icon-72x72.png'
+  };
+
+  e.waitUntil(
+    self.registration.showNotification(titulo, options)
+  );
+});
